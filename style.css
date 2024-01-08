@@ -23,13 +23,15 @@ window#waybar.hidden {
 }
 
 #workspaces {
+    color: #ffffff;
+    opacity: 1;
 }
 
 #window {
   margin: 2;
   padding-left: 8;
   padding-right: 8;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(512,0,0,0.3);
   font-size:14px;
   font-weight: bold;
 }
@@ -54,6 +56,7 @@ button:hover {
 }
 
 #workspaces button:hover {
+    color:#c9545d;
 }
 
 #workspaces button.focused {
