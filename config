@@ -1,14 +1,14 @@
 {
-    // "layer": "top", // Waybar at top layer
+     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    // "height": 1, // Waybar height (to be removed for auto height)
+    // "height": 10, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    // "spacing": 4, // Gaps between modules (4px)
+     "spacing": 9, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media"],
     "modules-center": ["hyprland/window"],
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
-    "modules-right": ["mpd", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "backlight", "keyboard-state", "battery", "battery#bat2", "tray", "clock"],
+    "modules-right": ["temperature", "cpu", "memory","network", "pulseaudio", "backlight", "keyboard-state", "battery", "battery#bat2", "tray", "clock"],
     // Modules configuration
         "hyprland/workspaces": {
             "format": "{name}: {icon}",
@@ -34,13 +34,14 @@
             },
             "separate-outputs": true
         },
+
         "keyboard-state": {
                 "numlock": true,
                 "capslock": true,
                 "format": "{name} {icon}",
                 "format-icons": {
-                    "locked": "",
-                    "unlocked": ""
+                    "locked": "  ",
+                    "unlocked": "  "
                 }
             },
             "hyprland/submap": {
@@ -83,8 +84,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "A",
+            "deactivated": "D"
         }
     },
     "tray": {
@@ -135,7 +136,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ({signalStrength}%)  ",
         "format-ethernet": " {ifname}",
         "tooltip-format": " {ifname} via {gwaddr}",
         "format-linked": " {ifname} (No IP)",
