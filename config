@@ -8,7 +8,7 @@
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media"],
     "modules-center": ["hyprland/window"],
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
-    "modules-right": ["temperature", "cpu", "memory","network", "pulseaudio", "backlight", "keyboard-state", "battery", "battery#bat2", "tray", "clock"],
+    "modules-right": ["temperature", "cpu", "memory","network", "backlight", "keyboard-state", "battery", "battery#bat2", "tray", "clock"],
     // Modules configuration
         "hyprland/workspaces": {
             "format": "{name}: {icon}",
@@ -76,7 +76,7 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)",
         "on-click": "mpc toggle",
-//        "on-click-right": "foot -a ncmpcpp ncmpcpp",
+        "on-click-right": "kitty --name ncmpcpp -e ncmpcpp",
         "on-scroll-up": "mpc volume +2",
         "on-scroll-down": "mpc volume -2"
 
